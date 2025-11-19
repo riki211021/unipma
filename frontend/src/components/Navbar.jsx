@@ -128,6 +128,8 @@ export default function Navbar() {
                     ["Program Studi", "/studi"],
                     ["Akreditasi", "https://akreditasi.unipma.ac.id/", true],
                     ["Cara VA", "/va"],
+                    ["Ukm Unit Kegiatan Mahasiswa", "/ukm"],
+                    ["Ibadah", "/ibadah"],
                   ].map(([label, href, external], i) =>
                     external ? (
                       <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="block px-5 py-2.5 hover:bg-cyan-50 text-gray-700 hover:text-cyan-600 transition-all">

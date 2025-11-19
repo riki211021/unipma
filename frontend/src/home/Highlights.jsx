@@ -37,46 +37,37 @@ export default function Highlights() {
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium border border-cyan-200/50 shadow-sm mb-4">
-            Keunggulan UNIPMA
-          </div>
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium border border-cyan-200/50 shadow-sm mb-4">Keunggulan UNIPMA</div>
           <h2 className="text-3xl md:text-4xl font-light text-gray-900">
             Mengapa Memilih <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">UNIPMA?</span>
           </h2>
         </div>
 
         {/* Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {items.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 hover:border-cyan-200 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                {/* Gradient Border Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
-                
-                {/* Icon Container */}
-                <div className={`relative inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-xl shadow-lg shadow-cyan-500/20 mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-7 h-7 text-white" />
-                </div>
+        <div className="w-full flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+            {items.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div key={index} className="group relative bg-white/80 backdrop-blur-sm text-center rounded-2xl p-6 border border-gray-100 hover:border-cyan-200 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
-                {/* Content */}
-                <div className="relative space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-600 group-hover:to-blue-600 transition-all duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed font-light">
-                    {item.desc}
-                  </p>
-                </div>
+                  <div className={`relative inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-xl shadow-lg shadow-cyan-500/20 mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className="w-7 h-7 text-white" />
+                  </div>
 
-                {/* Bottom Accent Line */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${item.gradient} rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-              </div>
-            );
-          })}
+                  <div className="relative space-y-2">
+                    <h3 className="text-lg font-semibold text-gray-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-600 group-hover:to-blue-600 transition-all duration-300">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed font-light">{item.desc}</p>
+                  </div>
+
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${item.gradient} rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Bottom Stats Bar */}

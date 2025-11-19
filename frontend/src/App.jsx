@@ -21,6 +21,12 @@ import Fasilitas from "./fasilitas/Fasilitas";
 import Wisata from "./wisata/Wisata";
 import DetailWisata from "./wisata/DetailWisata";
 import DetailFasilitas from "./fasilitas/DetailFasilitas";
+import Ibadah from "./informasi/Ibadah";
+import Ukm from "./informasi/Ukm";
+import UkmDetail from "./informasi/UkmDetail";
+import IbadahDetail from "./informasi/IbadahDetail";
+import BeasiswaDetail from "./beasiswa/BeasiswaDetail";
+import ProgramStudiDetail from "./informasi/ProgramStudiDetail";
 
 function App() {
   return (
@@ -41,10 +47,19 @@ function App() {
         <Route path="/rpl" element={<RPLPage />} />
         <Route path="/biaya" element={<BiayaPage />} />
         <Route path="/studi" element={<ProgramStudi />} />
+        <Route path="/prodi-detail/:id" element={<ProgramStudiDetail />} />
+
         <Route path="/va" element={<Va />} />
+        <Route path="/ukm" element={<Ukm />} />
+        <Route path="/ukm/:id" element={<UkmDetail />} />
+        <Route path="/ibadah" element={<Ibadah />} />
+        <Route path="/ibadah/:id" element={<IbadahDetail />} />
+
 
         {/* beasiswa */}
         <Route path="/beasiswa" element={<Beasiswa />} />
+        <Route path="/beasiswa/:id" element={<BeasiswaDetail />} />
+
 
         {/* Hasil seleksi */}
         <Route path="/hasil" element={<HasilSeleksi />} />
