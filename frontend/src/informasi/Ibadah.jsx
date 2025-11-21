@@ -46,11 +46,11 @@ export default function Ibadah() {
       <div className="relative text-center mb-16 space-y-4">
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium border border-cyan-200/50 shadow-sm">
           <Building2 className="w-4 h-4" />
-          Fasilitas Ibadah
+          Fasilitas Ibadah Sekitar Unipma
         </div>
 
         <h1 className="text-3xl md:text-5xl font-light text-gray-900">
-          Tempat <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Ibadah</span>
+          Tempat Ibadah <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Disekitar Unipma</span>
         </h1>
 
         <p className="text-gray-600 max-w-2xl mx-auto font-light">Tempat ibadah yang nyaman dan terawat untuk mendukung kegiatan keagamaan civitas akademika.</p>

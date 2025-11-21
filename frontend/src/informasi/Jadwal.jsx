@@ -7,22 +7,32 @@ export default function Jadwal() {
     {
       title: "Gelombang 1",
       data: [
-        { jalur: "Zonasi", pendaftaran: "01 Jan - 10 Jan", daftarUlang: "15 Jan - 20 Jan" },
-        { jalur: "Prestasi Akademik", pendaftaran: "02 Jan - 12 Jan", daftarUlang: "16 Jan - 21 Jan" },
+        { jalur: "PMDK Raport", pendaftaran: "1 Desember 2025 - 30 April 2026", daftarUlang: "30 april 2026" },
+        { jalur: "SKL/Ijasah", pendaftaran: "1 Desember 2025 - 30 April 2026", daftarUlang: "30 april 2026" },
       ],
     },
     {
       title: "Gelombang 2",
       data: [
-        { jalur: "Zonasi", pendaftaran: "11 Jan - 20 Jan", daftarUlang: "25 Jan - 30 Jan" },
-        { jalur: "Prestasi Akademik", pendaftaran: "12 Jan - 22 Jan", daftarUlang: "26 Jan - 31 Jan" },
+        { jalur: "PMDK Raport", pendaftaran: "1 Mei 2026 - 31 Juli 2026", daftarUlang: "1 Agustus 2026" },
+        { jalur: "SKL/Ijasah", pendaftaran: "1 Mei 2026 - 31 Juli 2026", daftarUlang: "1 Agustus 2026" },
+        { jalur: "UTBK", pendaftaran: "1 Mei 2026 - 31 Juli 2026", daftarUlang: "1 Agustus 2026" },
       ],
     },
     {
       title: "Gelombang 3",
       data: [
-        { jalur: "Zonasi", pendaftaran: "21 Jan - 30 Jan", daftarUlang: "05 Feb - 10 Feb" },
-        { jalur: "Prestasi Akademik", pendaftaran: "22 Jan - 01 Feb", daftarUlang: "06 Feb - 11 Feb" },
+        { jalur: "PMDK Raport", pendaftaran: "3 Agustus 2026 - 5 September 2026", daftarUlang: "12 Agustus 2026" },
+        { jalur: "SKL/Ijasah", pendaftaran: "3 Agustus 2026 - 5 September 2026", daftarUlang: "12 Agustus 2026" },
+        { jalur: "UTBK", pendaftaran: "3 Agustus 2026 - 5 September 2026", daftarUlang: "12 Agustus 2026" },
+      ],
+    },
+    {
+      title: "Gelombang 4",
+      data: [
+        { jalur: "PMDK Raport", pendaftaran: "15 September 2026 - 30 Oktober 2026", daftarUlang: "" },
+        { jalur: "SKL/Ijasah", pendaftaran: "15 September 2026 - 30 Oktober 2026", daftarUlang: "" },
+        
       ],
     },
   ];
